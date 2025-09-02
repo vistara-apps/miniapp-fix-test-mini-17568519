@@ -10,14 +10,14 @@
     "subtitle": "Built with Zara",
     "description": "Miniapp Fix Test is a Base Mini App built with Zara.",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://miniapp-fix-test.vistara.dev",
-    "splashImageUrl": "https://dummyimage.com/200x200/0a0b0d/ffffff.png&text=Splash",
+    "homeUrl": "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app",
+    "splashImageUrl": "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
-    "heroImageUrl": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Hero",
+    "heroImageUrl": "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app/image.png",
     "tagline": "Miniapp Fix Test",
     "screenshotUrls": [
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot1",
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot2"
+      "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app/screenshot.png",
+      "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app/screenshot.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -25,6 +25,6 @@
       "miniapp",
       "onchainkit"
     ],
-    "webhookUrl": "https://miniapp-fix-test.vistara.dev/api/webhook"
+    "webhookUrl": "https://miniappfixtest-b8id-cq4uzmlp5-vistara.vercel.app/api/webhook"
   }
 }
