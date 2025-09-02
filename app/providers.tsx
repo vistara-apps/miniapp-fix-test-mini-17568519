@@ -7,6 +7,7 @@ import { base } from 'viem/chains';
 import { createConfig, http } from 'wagmi';
 import { type ReactNode, useState } from 'react';
 
+// Create Wagmi config with Base chain
 const config = createConfig({
   chains: [base],
   transports: {
@@ -15,7 +16,18 @@ const config = createConfig({
 });
 
 export function Providers(props: { children: ReactNode }) {
-  const [queryClient] = useState(() => new QueryClient());
+  // Initialize React Query client
+  const [queryClient] = useState(() => 
+    new QueryClient({
+      defaultOptions: {
+        queries: {
+          staleTime: 60 * 1000, // 1 minute
+          refetchOnWindowFocus: false,
+          retry: 1,
+        },
+      },
+    })
+  );
 
   return (
     <WagmiProvider config={config}>
@@ -27,7 +39,22 @@ export function Providers(props: { children: ReactNode }) {
             appearance: {
               mode: 'dark',
               theme: 'default',
-              name: 'My Base Mini App',
+              name: 'Miniapp Fix Test',
+              accentColor: '#3B82F6', // Blue accent color
+              borderRadius: 'md',
+            },
+            connect: {
+              showQrModal: true,
+              disableUDC: false,
+              disableEIP6963: false,
+              disableInjected: false,
+              preferredWallets: ['coinbase', 'metamask', 'rainbow', 'walletconnect'],
+            },
+            language: {
+              connectWallet: 'Connect Wallet',
+              disconnect: 'Disconnect',
+              learnMore: 'Learn More',
+              poweredBy: 'Powered by OnchainKit',
             },
           }}
         >
